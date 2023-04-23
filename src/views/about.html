@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>About</h1>
+    <h2>Please input your name:</h2>
+
+    <form id="miFormulario" method="POST" /*action="../controller/services/api1.php"*/  on>
+      <input type="text" name="name" />
+      <button type="submit">Submit Name</button>
+    </form>
+<div id="result"></div>
+  
+    <script>
+    
+const resultDiv = document.getElementById("result");
+const formulario = document.querySelector('#miFormulario');
+
+
+formulario.addEventListener('submit', peticion);
+
+function peticion(evento) {
+  evento.preventDefault();
+  const datos = new FormData(formulario);
+  fetch('../controller/services/api1.php', {
+    method: 'POST',
+    body: datos
+  })
+  .then(function(respuesta) {
+    return respuesta.text();
+  })
+  .then(function(texto) {
+    console.log(texto);
+    resultDiv.innerHTML = texto;
+  })
+  .catch(function(error) {
+    console.error(error);
+  });
+}
+
+    /*  const peticion = (e) => {
+        $.ajax({
+          type: "POST",
+          url: "../controller/services/api1.php",
+          cache: false,
+          data: formulario.serialize(),
+          success: function (data) {
+            resultDiv.innerHTML = data;
+            console.log(data);
+          },
+          error: function(error) {
+      console.error(error);
+    }
+        });
+      };*/
+
+
+    </script>
+  </body>
+</html>

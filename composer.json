@@ -1,0 +1,21 @@
+{
+    "name": "uber/mvc",
+    "description": "poo",
+    "autoload": {
+        "psr-4": {
+            "Uber\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wilberM"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.0",
+        "nesbot/carbon": "^2.65"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "name": "Dar\u00edo Usuario",
+        "contact": "3025826497",
+        "address": "Calle 90 N 23 23"
+    },
+    {
+        "id": 2,
+        "name": "Pedro Cliente",
+        "contact": "3025674849",
+        "address": "Carrera 32 N 23 23"
+    },
+    {
+        "id": 3,
+        "name": "Adrian Tamayo",
+        "contact": "3052846497",
+        "address": "Callle 34 09 90"
+    },
+    {
+        "id": "4",
+        "name": "Pedro Garcia",
+        "contact": "3069876534",
+        "address": "Calle 103 N 21 09"
+    },
+    {
+        "id": 5,
+        "name": "Claudia Norma",
+        "contact": "3185916748",
+        "address": "Av 500 N 56 47"
+    },
+    {
+        "id": 6,
+        "name": "Daniel Usuario",
+        "contact": "3025896471",
+        "address": "Calle 34 90 98"
+    }
+]

@@ -1,0 +1,5 @@
+composer init
+composer require <package>
+composer dump
+composer
+C:\Users\wilber montero\Desktop\PHP\PHP-MVC-OOP> php -S localhost:8000
